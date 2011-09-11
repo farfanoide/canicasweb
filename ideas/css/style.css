@@ -56,10 +56,6 @@ html {
    position: relative;
    
 }
-#wrap{
-   position: relative;
-}
-
 /*-----------
   ANIMATIONS
 ------------*/
@@ -83,14 +79,6 @@ html {
   70%     { -webkit-transform: rotate(390deg) }
   100%    { -webkit-transform: rotate(360deg) }
 }
-
-#hacemos a:hover{
-  -webkit-animation-delay:0.1s;
-  -webkit-animation-name: rotate; 
-  -webkit-animation-duration: 0.7s; 
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in-out;
-}
 #flash a{   
    -webkit-animation-name: flash; 
    -webkit-animation-delay: 1s;
@@ -100,4 +88,12 @@ html {
 }
 #bounce{
    -webkit-animation: bounce 0.5s ease-in 0s infinite alternate;
+}
+
+#hacemos a:hover{
+  -webkit-animation-delay:0.1s;
+  -webkit-animation-name: rotate; 
+  -webkit-animation-duration: 0.7s; 
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
 }

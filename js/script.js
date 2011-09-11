@@ -21,7 +21,7 @@ return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + cu
    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
  }
 });
-$("a[rel=toiaGal]","a[rel=pichaGal]","a[rel=chaveGal]").fancybox({
+$("a[rel=toiaGal]").fancybox({
  'transitionIn'    : 'none',
  'transitionOut'   : 'none',
  'titlePosition'   : 'over',

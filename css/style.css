@@ -238,6 +238,9 @@ h1 {
    margin: 5px auto;
    background: transparent url(../img/logoSmall.png) top left no-repeat;
 }
+#canicasInt{
+   margin-top: 20px;
+}
 header{
    color: #272827 !important;
   display: block;
@@ -375,6 +378,7 @@ h4{
 }
 .chicas h3{
       color: #cd9a34;
+      margin-top: 20px;
 }
 .chicas img{
    background: #e1d3a3;
@@ -524,6 +528,11 @@ form input:focus, textarea:focus{
    margin-top: -25px;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+}
+
+/* add functionality to IE */
 .oldie * {
    behavior: url('PIE.htc');
 }
