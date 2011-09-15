@@ -3,10 +3,10 @@
 
 /* Column code based on work from cssgrid.net: 
 The 1140px Grid by Andy Taylor – http://cssgrid.net – http://www.twitter.com/andytlr – http://www.catchingzebra.com */
-.container {padding-left: 20px; padding-right: 20px;}
+/*.container {padding-left: 20px; padding-right: 20px;}*/
 .row {clear: both; width: 100%; max-width: 1140px; margin: 0 auto; overflow: hidden;}
 
-.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11 {float: left; margin-right: 3.8%; position: relative; -webkit-transition: position 0.3s ease-in-out;}
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11 {float: left; margin-right: 3.8%; position: relative;}
 
 .col_1 {width: 4.85%;}  /* ie - 4.7% */
 .col_2 {width: 13.5%;}  /* ie - 13.2% */
@@ -304,19 +304,19 @@ Columnal - vertical spacing options */
 .margin_bottom_90 {margin-bottom: 90px !important;}
 .margin_bottom_120 {margin-bottom: 120px !important;}
 
-.padding_top_15 {padding-top:15px !important;}
-.padding_top_30 {padding-top:30px !important;}
-.padding_top_45 {padding-top:45px !important;}
-.padding_top_60 {padding-top:60px !important;}
-.padding_top_90 {padding-top:90px !important;}
+.padding_top_15 {padding-top :15px !important;}
+.padding_top_30 {padding-top :30px !important;}
+.padding_top_45 {padding-top :45px !important;}
+.padding_top_60 {padding-top :60px !important;}
+.padding_top_90 {padding-top :90px !important;}
 .padding_top_120 {padding-top:120px !important;}
 .padding_top_130 {padding-top:130px !important;}
 
-.padding_bottom_15 {padding-bottom:15px !important;}
-.padding_bottom_30 {padding-bottom:30px !important;}
-.padding_bottom_45 {padding-bottom:45px !important;}
-.padding_bottom_60 {padding-bottom:60px !important;}
-.padding_bottom_90 {padding-bottom:90px !important;}
+.padding_bottom_15 {padding-bottom :15px !important;}
+.padding_bottom_30 {padding-bottom :30px !important;}
+.padding_bottom_45 {padding-bottom :45px !important;}
+.padding_bottom_60 {padding-bottom :60px !important;}
+.padding_bottom_90 {padding-bottom :90px !important;}
 .padding_bottom_120 {padding-bottom:120px !important;}
 .padding_bottom_130 {padding-bottom:130px !important;}
 
@@ -401,11 +401,7 @@ Columnal - extras */
 		width: 100%;
 	}
 
-/*	 .row {width: 100%;} */
-	/* Type presets */
-
-	/* .reverse {padding-top: 1em; margin-bottom: 1em;} */
-
+	 .row {width: 100%;} 
 	/* Columnal content control - use on any elements to show/hide content on mobile */
 	.mobile-hide {display: none;}
 	.mobile-only {display: block;}

@@ -5,38 +5,21 @@ $(document).ready(function() {
 $('a').smoothScroll(); 
 
 // add lightbox effect to img galleries
-$("a[rel=chaveGal]").fancybox({
-'transitionIn'		: 'none',
-'transitionOut'		: 'none',
-'titlePosition' 	: 'over',
-'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-		}
-});
-   $("a[rel=pichaGal]").fancybox({
- 'transitionIn'    : 'none',
- 'transitionOut'   : 'none',
- 'titlePosition'   : 'over',
- 'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
-   return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
- }
-});
-$("a[rel=toiaGal]").fancybox({
- 'transitionIn'    : 'none',
- 'transitionOut'   : 'none',
- 'titlePosition'   : 'over',
- 'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
+
+$("a[rel=pichaGal],a[rel=chaveGal],a[rel=toiaGal]").fancybox({
+   'transitionIn'	:	'elastic',
+   'transitionOut'	:	'fade',
+   'speedIn'		:	600, 
+   'speedOut'		:	200, 
+   'titlePosition'   : 'over',
+   'titleFormat'   : function(title, currentArray, currentIndex, currentOpts) {
    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
  }
 });
 // end lightbox effects
 
-
-
-
 // hide everything on document load
 $('.hideOnLoad').slideUp(1500);
-
 
 // hide animations and whatnot...
 function hideToi() {
