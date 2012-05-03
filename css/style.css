@@ -7,7 +7,7 @@
  *
  * Detailed information about this CSS: h5bp.com/css
  *
- * ==== normalize ==========================================================
+ * ==|== normalize ==========================================================
  */
 
 
@@ -156,23 +156,17 @@ button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: ba
 
 /*
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
- * 2. Correct inner spacing displayed oddly in IE6/7
  */
 
-button, input { line-height: normal; *overflow: visible; }
-
-/*
- * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
- */
-
-table button, table input { *overflow: auto; }
+button, input { line-height: normal; }
 
 /*
  * 1. Display hand cursor for clickable form elements
  * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
  */
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
 
 /*
  * Consistent box sizing and appearance
@@ -206,7 +200,6 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
-
 
 /* ==== primary styles =====================================================
    Author: FARFAN
@@ -261,23 +254,23 @@ header{
   min-height: 75px;
   }
 header:hover{
-  	opacity: 1;
-  	margin-top: 0;
+    opacity: 1;
+    margin-top: 0;
   }
 li {
-  	display: inline;
-  	list-style: none;
-  	}
+    display: inline;
+    list-style: none;
+    }
 nav {
    text-align: center;
    line-height: 90px;
-  	}
+    }
 nav a{
-	color: black;
-	font: 16px/1.5em 'Walter Turncoat',Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
-	text-transform: uppercase;
-	padding: 5px;
-  	}
+  color: black;
+  font: 16px/1.5em 'Walter Turncoat',Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
+  text-transform: uppercase;
+  padding: 5px;
+    }
 
 #clickMe{
    display: block;
@@ -326,16 +319,16 @@ nav a{
      -moz-box-shadow   : 0px 0px 15px rgba(0,0,0,0.3) ;
      box-shadow        : 0px 0px 15px rgba(0,0,0,0.3) ;
   }
-/*	#rss             {background: url(../img/socialSprite.png) 0px -18px no-repeat;}
-	#rss:hover       {background: url(../img/socialSprite.png) 0 0 no-repeat;}*/
-	#facebook        {background: url(../img/socialSprite.png) 0 0 no-repeat;}
-/*	#facebook:hover  {background: url(../img/socialSprite.png) 0px -36px no-repeat;}*/
-	#sUp           {background: url(../img/socialSprite.png) -151px 0 no-repeat;}
-/*	#skype:hover     {background: url(../img/socialSprite.png) 0px -72px no-repeat;}*/
-	#flickr          {background: url(../img/socialSprite.png) -101px 0 no-repeat;}
-/*	#flickr:hover    {background: url(../img/socialSprite.png) 0px -108px no-repeat;}*/
-	#twitter        {background: url(../img/socialSprite.png) -50px 0 no-repeat;}
-/*	#twitter:hover   {background: url(../img/socialSprite.png) 0px -144px no-repeat;} */
+/*  #rss             {background: url(../img/socialSprite.png) 0px -18px no-repeat;}
+  #rss:hover       {background: url(../img/socialSprite.png) 0 0 no-repeat;}*/
+  #facebook        {background: url(../img/socialSprite.png) 0 0 no-repeat;}
+/*  #facebook:hover  {background: url(../img/socialSprite.png) 0px -36px no-repeat;}*/
+  #sUp           {background: url(../img/socialSprite.png) -151px 0 no-repeat;}
+/*  #skype:hover     {background: url(../img/socialSprite.png) 0px -72px no-repeat;}*/
+  #flickr          {background: url(../img/socialSprite.png) -101px 0 no-repeat;}
+/*  #flickr:hover    {background: url(../img/socialSprite.png) 0px -108px no-repeat;}*/
+  #twitter        {background: url(../img/socialSprite.png) -50px 0 no-repeat;}
+/*  #twitter:hover   {background: url(../img/socialSprite.png) 0px -144px no-repeat;} */
 
 
 .que h4:hover,.chicas img:hover{
@@ -429,8 +422,18 @@ h4{
 }
 .galeria img:hover{
    -webkit-transform: rotate(15deg);
+   -moz-transform: rotate(15deg);
+   -ms-transform: rotate(15deg);
+   -o-transform: rotate(15deg);
+   transform: rotate(15deg);
 }
-
+/* =============================================================================
+                      EFECTOS CHICAS   
+   ========================================================================== */
+#toia:hover #canicasInt{
+   opacity: 0.5;
+   background: url(../img/toiaint.png) 0 0 no-repeat;
+}
 /*===========================
          LABUROS
 ============================*/
@@ -478,6 +481,14 @@ h4{
 #curiosidades h4{
    background: #ece443 url(../img/hacemosImg.png) no-repeat;
 }
+div.que h4:hover{
+   cursor: pointer;
+   color: whitesmoke;
+   background: whitesmoke url(../img/hacemosImg.png) no-repeat;
+  -webkit-box-shadow: 0 0 7px white;
+  -moz-box-shadow   : 0 0 7px white;
+  box-shadow        : 0 0 7px white;
+}
 /* =============================================================================
                              FOOTER Y CONTACTO
    ========================================================================== */
@@ -515,6 +526,7 @@ form input:focus, textarea:focus{
 }
 #enviar, #cancelar{
    float             : right;
+   font-family       : 'Walter Turncoat';
    width             : 25% !important;
    background        : #eddea7;
    -webkit-box-shadow: 0 0 4px gray;
@@ -582,11 +594,24 @@ input:focus, textarea:focus {
      }
       
  }
+ @media (max-width:760px){
+ #canicasInt{
+    display: none;
+ }
+ }
  @media (max-width: 480px){
     #social a{
        opacity: 1;       
     }
+    #canicasInt{
+       display: none;
+    }
+    nav{
+       line-height: 40px;
+    }
  }
+
+
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
@@ -621,7 +646,7 @@ input:focus, textarea:focus {
    ========================================================================== */
 
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }

@@ -20,7 +20,7 @@ Thumbs.db
 .project
 .settings
 .tmproj
-.esproj
+*.esproj
 nbproject
 
 # Dreamweaver added files
@@ -42,6 +42,3 @@ publish
 # build script local files
 build/buildinfo.properties
 build/config/buildinfo.properties
-.espressostorage
-
-canicaswebFarfanoide.esproj

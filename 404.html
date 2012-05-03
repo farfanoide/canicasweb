@@ -16,16 +16,13 @@
     /* =============================================================================
                                      COOL STUFF                                      
        ========================================================================== */
-    
-    #flash{
+     #flash{
        background: url(img/foto.png) no-repeat;
        display: block;
        width: 83px;
        height: 82px;  
        border-radius: 50px;
        margin: 20px auto;
-
-       
     }
     #flash a{
        display: block;
@@ -33,7 +30,6 @@
        height: 93px;  
        border-radius: 50px;
        background: url(img/fotoFlash.png) no-repeat;
-    
     }
     #bounce{
        float: left;
@@ -51,25 +47,23 @@
       ANIMATIONS
     ------------*/
     @-webkit-keyframes 'bounce' {
-       from{
-          top: -50px;
-       }
-       to{
-          top: 0;
-       }
+      from{top: -50px;}
+      to  {top: 0;}
     }
-    
     @-webkit-keyframes 'flash' {
        0%     {opacity: 0;}
        95%    {opacity: 0;}
        100%   {opacity: 1;}
     }
-    
     @-webkit-keyframes rotate {
       0%      { -webkit-transform: rotate(0deg) }
       70%     { -webkit-transform: rotate(390deg) }
       100%    { -webkit-transform: rotate(360deg) }
     }
+    /* =============================================================================
+                         APLICAMOS LAS ANIMACIONES
+   ========================================================================== */
+
     #flash a{   
        -webkit-animation-name: flash; 
        -webkit-animation-delay: 1s;
@@ -77,9 +71,7 @@
        -webkit-animation-iteration-count: infinite;
        -webkit-animation-timing-function: linear;
     }
-    #bounce{
-       -webkit-animation: bounce 0.5s ease-in 0s infinite alternate;
-    }
+    #bounce{-webkit-animation: bounce 0.5s ease-in 0s infinite alternate;}
     
   </style>
 </head>
